@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ObjcLibrary
 
 struct ContentView: View {
     var body: some View {
@@ -16,6 +17,14 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            let pub = MyPublicClass()
+            pub.printHello()
+            pub.printProjectHello()
+            
+            //let proj = MyProjectClass()
+            //proj.printHello()
+        }
     }
 }
 
