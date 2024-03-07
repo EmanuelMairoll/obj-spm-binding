@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
-import ObjcLibrary
+import ObjcLibraryTarget
 
 struct ContentView: View {
+    @State var showStoryboard: Bool = false
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Button("Show Storyboard") {
+                showStoryboard = true;
+            }
         }
         .padding()
         .onAppear {
@@ -24,6 +29,9 @@ struct ContentView: View {
             
             //let proj = MyProjectClass()
             //proj.printHello()
+        }
+        .popover(isPresented: $showStoryboard) {
+            StoryboardRepresentable()
         }
     }
 }

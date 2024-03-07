@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,12 @@
 		880231EC2B988E6900CC8A94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880231EB2B988E6900CC8A94 /* ContentView.swift */; };
 		880231EE2B988E6B00CC8A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880231ED2B988E6B00CC8A94 /* Assets.xcassets */; };
 		880231F12B988E6B00CC8A94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880231F02B988E6B00CC8A94 /* Preview Assets.xcassets */; };
+		880231F92B988E8200CC8A94 /* ObjcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 880231F82B988E8200CC8A94 /* ObjcLibrary */; };
+		88269BC82B99E6F600E23627 /* ObjcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 88269BC72B99E6F600E23627 /* ObjcLibrary */; };
+		886D797D2B98977C00E82D3E /* ObjcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 886D797C2B98977C00E82D3E /* ObjcLibrary */; };
+		886D79802B989A6900E82D3E /* ObjcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 886D797F2B989A6900E82D3E /* ObjcLibrary */; };
+		886D7B3E2B9A18FC00AA451C /* ObjcLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 886D7B3D2B9A18FC00AA451C /* ObjcLibrary */; };
+		88FB4DB92B99CA5E009ADDA7 /* StoryboardRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB4DB82B99CA5E009ADDA7 /* StoryboardRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,7 @@
 		880231EB2B988E6900CC8A94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		880231ED2B988E6B00CC8A94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		880231F02B988E6B00CC8A94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88FB4DB82B99CA5E009ADDA7 /* StoryboardRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				886D797D2B98977C00E82D3E /* ObjcLibrary in Frameworks */,
+				886D79802B989A6900E82D3E /* ObjcLibrary in Frameworks */,
+				88269BC82B99E6F600E23627 /* ObjcLibrary in Frameworks */,
+				880231F92B988E8200CC8A94 /* ObjcLibrary in Frameworks */,
+				886D7B3E2B9A18FC00AA451C /* ObjcLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +67,7 @@
 				880231EB2B988E6900CC8A94 /* ContentView.swift */,
 				880231ED2B988E6B00CC8A94 /* Assets.xcassets */,
 				880231EF2B988E6B00CC8A94 /* Preview Content */,
+				88FB4DB82B99CA5E009ADDA7 /* StoryboardRepresentable.swift */,
 			);
 			path = "obj-spm-binding";
 			sourceTree = "<group>";
@@ -83,6 +96,13 @@
 			dependencies = (
 			);
 			name = "obj-spm-binding";
+			packageProductDependencies = (
+				880231F82B988E8200CC8A94 /* ObjcLibrary */,
+				886D797C2B98977C00E82D3E /* ObjcLibrary */,
+				886D797F2B989A6900E82D3E /* ObjcLibrary */,
+				88269BC72B99E6F600E23627 /* ObjcLibrary */,
+				886D7B3D2B9A18FC00AA451C /* ObjcLibrary */,
+			);
 			productName = "obj-spm-binding";
 			productReference = 880231E62B988E6900CC8A94 /* obj-spm-binding.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 880231DD2B988E6900CC8A94;
+			packageReferences = (
+				886D7B3C2B9A18FC00AA451C /* XCLocalSwiftPackageReference "obj-swift-package" */,
+			);
 			productRefGroup = 880231E72B988E6900CC8A94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FB4DB92B99CA5E009ADDA7 /* StoryboardRepresentable.swift in Sources */,
 				880231EC2B988E6900CC8A94 /* ContentView.swift in Sources */,
 				880231EA2B988E6900CC8A94 /* obj_spm_bindingApp.swift in Sources */,
 			);
@@ -344,6 +368,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		886D7B3C2B9A18FC00AA451C /* XCLocalSwiftPackageReference "obj-swift-package" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "obj-swift-package";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		880231F82B988E8200CC8A94 /* ObjcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObjcLibrary;
+		};
+		88269BC72B99E6F600E23627 /* ObjcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObjcLibrary;
+		};
+		886D797C2B98977C00E82D3E /* ObjcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObjcLibrary;
+		};
+		886D797F2B989A6900E82D3E /* ObjcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObjcLibrary;
+		};
+		886D7B3D2B9A18FC00AA451C /* ObjcLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ObjcLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 880231DE2B988E6900CC8A94 /* Project object */;
 }
